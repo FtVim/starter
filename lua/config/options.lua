@@ -29,8 +29,8 @@ opt.smartcase = true
 opt.splitright = true
 opt.splitbelow = true
 
--- Show which line your cursor is on
-opt.cursorline = true
+-- Dont Show which line your cursor is on
+opt.cursorline = false
 
 -- tabs & indentation
 opt.expandtab = true
