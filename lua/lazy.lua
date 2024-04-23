@@ -11,12 +11,17 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "plugins" } }, {
-  checker = {
-    enabled = true,
-    notify = false,
+require("lazy").setup {
+  spec = {
+    -- add FtVim and import its plugins
+    { "FtVim/FtVim", import = "ftvim.plugins" },
+    { import = "plugins" },
+    checker = {
+      enabled = true,
+      notify = false,
+    },
+    change_detection = {
+      notify = false,
+    },
   },
-  change_detection = {
-    notify = false,
-  },
-})
+}
