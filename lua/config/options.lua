@@ -1,37 +1,39 @@
-vim.cmd("let g:netrw_liststyle = 3")
-
+-- [[ Setting options ]]
 local opt = vim.opt
 
--- Make relative line numbers default
+-- Make line numbers default
+opt.number = true
+-- Add relative line numbers, to help with jumping.
 opt.relativenumber = true
--- opt.number = true
+
+-- Enable mouse mode
+opt.mouse = "a"
+
+-- Don't show the mode
+opt.showmode = false
+
+-- Sync clipboard between OS and Neovim.
+opt.clipboard = "unnamedplus"
+
+-- Enable break indent
+opt.breakindent = true
+
+-- Save undo history
+opt.undofile = true
+
+-- Case-insensitive
+opt.ignorecase = true
+opt.smartcase = true
+
+-- Configure how new splits should be opened
+opt.splitright = true
+opt.splitbelow = true
+
+-- Show which line your cursor is on
+opt.cursorline = true
 
 -- tabs & indentation
 opt.expandtab = true
 opt.tabstop = 4
 opt.shiftwidth = 4
 opt.autoindent = true
-
-opt.wrap = false
-
--- search settings
-opt.ignorecase = true
-opt.smartcase = true
-
--- cursorline
-opt.cursorline = true
-
--- ui
-opt.termguicolors = true
-opt.background = "dark"
-opt.signcolumn = "yes"
-
--- backspace
-opt.backspace = "indent,eol,start"
-
---clipboard
-opt.clipboard:append("unnamedplus")
-
--- split windows
-opt.splitright = true
-opt.splitbelow = true
