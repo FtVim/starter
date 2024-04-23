@@ -2,8 +2,9 @@ vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
 
+-- Make relative line numbers default
 opt.relativenumber = true
-opt.number = true
+-- opt.number = true
 
 -- tabs & indentation
 opt.expandtab = true

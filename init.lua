@@ -4,8 +4,11 @@
 --	 / __/   / /   | |/ // // /  / /
 --	/_/     /_/    |___/___/_/  /_/
 
+-- See `./lua/config/options.lua`
+require "config.options"
+
+-- See `./lua/config/keymaps.lua`
+require "config.keymaps"
+
 -- See `./lua/lazy.lua`
 require "lazy"
-
--- See `./lua/config/init.lua`
-require "config"
