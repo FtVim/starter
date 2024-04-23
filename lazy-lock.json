@@ -1,0 +1,5 @@
+{
+  "FtVim": { "branch": "main", "commit": "db41d07fbe73e0a5d4e5c9d3c21b140f04b275b1" },
+  "c_formatter_42.vim": { "branch": "master", "commit": "7a2d50f6683d6f58a2c95375524b4406d6bdc2c3" },
+  "lazy.nvim": { "branch": "main", "commit": "bef521ac89c8d423f9d092e37b58e8af0c099309" }
+}
