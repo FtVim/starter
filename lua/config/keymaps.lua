@@ -34,11 +34,6 @@ map("n", "<leader>`", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
 -- Clear search with <esc>
 map({ "n" }, "<esc>", "<cmd>nohlsearch<CR>", { desc = "Escape and Clear hlsearch" })
 
--- Add undo break-points
-map("i", ",", ",<c-g>u")
-map("i", ".", ".<c-g>u")
-map("i", ";", ";<c-g>u")
-
 -- save file
 map({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
 
@@ -67,9 +62,6 @@ map("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
 -- new file
 map("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New File" })
 
-map("n", "<leader>xl", "<cmd>lopen<cr>", { desc = "Location List" })
-map("n", "<leader>xq", "<cmd>copen<cr>", { desc = "Quickfix List" })
-
 -- Terminal Mappings
 map("t", "<esc><esc>", "<c-\\><c-n>", { desc = "Enter Normal Mode" })
 map("t", "<C-h>", "<cmd>wincmd h<cr>", { desc = "Go to Left Window" })
@@ -86,11 +78,3 @@ map("n", "<leader>w-", "<C-W>s", { desc = "Split Window Below", remap = true })
 map("n", "<leader>w|", "<C-W>v", { desc = "Split Window Right", remap = true })
 map("n", "<leader>-", "<C-W>s", { desc = "Split Window Below", remap = true })
 map("n", "<leader>|", "<C-W>v", { desc = "Split Window Right", remap = true })
-
--- tabs
---map("n", "<leader><tab>l", "<cmd>tablast<cr>", { desc = "Last Tab" })
---map("n", "<leader><tab>f", "<cmd>tabfirst<cr>", { desc = "First Tab" })
---map("n", "<leader><tab><tab>", "<cmd>tabnew<cr>", { desc = "New Tab" })
---map("n", "<leader><tab>]", "<cmd>tabnext<cr>", { desc = "Next Tab" })
---map("n", "<leader><tab>d", "<cmd>tabclose<cr>", { desc = "Close Tab" })
---map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
