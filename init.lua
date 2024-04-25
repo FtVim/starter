@@ -9,7 +9,6 @@ require "config.options"
 
 -- See `./lua/config/keymaps.lua`
 require "config.keymaps"
-
 -- [[ Install `lazy.nvim` plugin manager ]]
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -33,3 +32,7 @@ require("lazy").setup {
   },
   checker = { enabled = true, notify = false }, -- automatically check for plugin updates
 }
+
+colorscheme = function()
+    require("tokyonight").load()
+end

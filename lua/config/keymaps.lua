@@ -51,10 +51,18 @@ map("v", "<", "<gv")
 map("v", ">", ">gv")
 
 -- learn to move
-map("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
-map("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
-map("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
-map("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
+map("n", "<left>", function()
+    vim.notify("Use h to move!!", "Error", { title = "Learn to move"})
+end)
+map("n", "<right>",  function()
+    vim.notify("Use l to move!!", "Error", { title = "Learn to move"})
+end)
+map("n", "<up>",  function()
+    vim.notify("Use k to move!!", "Error", { title = "Learn to move"})
+end)
+map("n", "<down>",  function()
+    vim.notify("Use j to move!!", "Error", { title = "Learn to move"})
+end)
 
 -- lazy
 map("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
