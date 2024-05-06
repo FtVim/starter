@@ -33,6 +33,10 @@ require("lazy").setup {
   checker = { enabled = true, notify = false }, -- automatically check for plugin updates
 }
 
-colorscheme = function()
-    require("tokyonight").load()
-end
+-- available colorschemes: 
+-- tokyonight-(moon,night,day,storm)
+-- kanagawa-(wave,dragon,lotus)
+-- catpuccin-(frappe,mocha,latte,macchiatto)
+-- yowish
+-- <leader>uc for inspect more
+vim.cmd.colorscheme("kanagawa-wave")
