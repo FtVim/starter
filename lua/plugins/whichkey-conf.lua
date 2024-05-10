@@ -18,9 +18,9 @@ return {
       c = {
           name = "code",
       },
-      d = {
-          name = "debug",
-      },
+      -- d = {
+          -- name = "debug",
+      -- },
       q = {
           name = "quit",
       },
