@@ -33,11 +33,5 @@ require("lazy").setup {
   checker = { enabled = true, notify = true }, -- automatically check for plugin updates
 }
 
--- available colorschemes: 
--- tokyonight-(moon,night,day,storm)
--- kanagawa-(wave,dragon,lotus)
--- catppuccin-(frappe,mocha,latte,macchiatto)
--- yowish
--- <leader>uc for inspect more
--- vim.cmd.colorscheme("oldworld")
+-- <leader>uc for select colorschemes
 require "settings.theme"
