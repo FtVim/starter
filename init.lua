@@ -30,13 +30,14 @@ require("lazy").setup {
     -- import/override with your plugins
     { import = "plugins" },
   },
-  checker = { enabled = true, notify = false }, -- automatically check for plugin updates
+  checker = { enabled = true, notify = true }, -- automatically check for plugin updates
 }
 
 -- available colorschemes: 
 -- tokyonight-(moon,night,day,storm)
 -- kanagawa-(wave,dragon,lotus)
--- catpuccin-(frappe,mocha,latte,macchiatto)
+-- catppuccin-(frappe,mocha,latte,macchiatto)
 -- yowish
 -- <leader>uc for inspect more
-vim.cmd.colorscheme("kanagawa-wave")
+-- vim.cmd.colorscheme("oldworld")
+require "settings.theme"
