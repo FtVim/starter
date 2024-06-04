@@ -33,5 +33,7 @@ require("lazy").setup {
   checker = { enabled = true, notify = true }, -- automatically check for plugin updates
 }
 
+require "config.toggleterm"
+
 -- <leader>uc for select colorschemes
 require "settings.theme"
