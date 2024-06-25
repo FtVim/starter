@@ -4,11 +4,6 @@
 --	 / __/   / /   | |/ // // /  / /
 --	/_/     /_/    |___/___/_/  /_/
 
-
-vim.g.maplocalleader = " "
-vim.g.mapleader = " "
-
--- [[ Install `lazy.nvim` plugin manager ]]
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system {
@@ -26,15 +21,14 @@ require("lazy").setup {
   spec = {
     -- add FtVim and import its plugins
     {
-		"FtVim/FtVim",
-		lazy= false,
-		branch = "newThings",
-		import = "ftvim.plugins",
-		    config = function()
-			    require "options"
-		    end,
-	},
-
+      "FtVim/FtVim",
+      lazy = false,
+      branch = "newThings",
+      import = "ftvim.plugins",
+	      config = function()
+      require "options"
+    end,
+    },
     -- import/override with your plugins
     { import = "plugins" },
   },

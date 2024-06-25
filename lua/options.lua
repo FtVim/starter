@@ -1,3 +1,5 @@
-require "ftvim.options"
+ftvim.format_on_save = false
 
--- add yours here!
+ftvim.builtin.treesitter.highlight.enable = true
+
+ftvim.builtin.treesitter.ensure_installed = { "cpp", "c" }
