@@ -4,11 +4,10 @@
 --	 / __/   / /   | |/ // // /  / /
 --	/_/     /_/    |___/___/_/  /_/
 
--- See `./lua/config/options.lua`
-require "config.options"
 
--- See `./lua/config/keymaps.lua`
-require "config.keymaps"
+vim.g.maplocalleader = " "
+vim.g.mapleader = " "
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -26,14 +25,22 @@ vim.opt.runtimepath:prepend(lazypath)
 require("lazy").setup {
   spec = {
     -- add FtVim and import its plugins
-    { "FtVim/FtVim", import = "ftvim.plugins" },
+    {
+		"FtVim/FtVim",
+		lazy= false,
+		branch = "newThings",
+		import = "ftvim.plugins",
+		    config = function()
+			    require "options"
+		    end,
+	},
+
     -- import/override with your plugins
     { import = "plugins" },
   },
   checker = { enabled = true, notify = true }, -- automatically check for plugin updates
 }
 
-require "config.toggleterm"
-
--- <leader>uc for select colorschemes
-require "settings.theme"
+vim.schedule(function()
+  require "keymaps"
+end)
