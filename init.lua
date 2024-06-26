@@ -23,7 +23,7 @@ require("lazy").setup {
     {
       "FtVim/FtVim",
       lazy = false,
-      branch = "newThings",
+      branch = "feature-updates",
       import = "ftvim.plugins",
 	      config = function()
       require "options"
