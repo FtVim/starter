@@ -23,23 +23,11 @@ require("lazy").setup({
                 -- add FtVim and import its plugins
                 {
                         "FtVim/FtVim",
-                        lazy = false,
                         branch = "feature-updates",
                         import = "ftvim.plugins",
-                        config = function()
-                                require("options")
-                        end,
                 },
                 -- import/override with your plugins
                 { import = "plugins" },
         },
         checker = { enabled = true, notify = true }, -- automatically check for plugin updates
 })
-
-vim.cmd("colorscheme " .. ftvim.colorscheme)
-
-require("ftvim.utils.modules").learn_to_move()
-
-vim.schedule(function()
-        require("keymaps")
-end)
