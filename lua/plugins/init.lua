@@ -1,3 +1,3 @@
 if 1 == true then
-  return
+  return {}
 end
