@@ -44,8 +44,4 @@ vim.schedule(function()
         require("keymaps")
 end)
 
-vim.api.nvim_create_autocmd("VimEnter", {
-	callback = function()
-		vim.cmd("LspStart")
-	end,
-})
+vim.cmd("TSToggle highlight")
