@@ -43,5 +43,3 @@ require("ftvim.utils.modules").learn_to_move()
 vim.schedule(function()
         require("keymaps")
 end)
-
-vim.cmd("TSToggle highlight")
