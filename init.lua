@@ -23,7 +23,6 @@ require("lazy").setup({
                 -- add FtVim and import its plugins
                 {
                         "FtVim/FtVim",
-			branch = "feature-updates",
                         import = "ftvim.plugins",
                 },
                 -- import/override with your plugins
