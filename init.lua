@@ -30,3 +30,8 @@ require("lazy").setup({
         },
         checker = { enabled = true, notify = true }, -- automatically check for plugin updates
 })
+
+require("lspconfig").clangd.setup({
+	autostart = true,
+	filetype = { "c", "cpp", "h", "hpp" },
+})
