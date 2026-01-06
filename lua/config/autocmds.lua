@@ -1,1 +1,20 @@
--- Add any additional autocmds here
+-- User Autocmds
+-- Add your custom autocommands here
+-- These will be added to FtVim's default autocmds
+--
+-- Examples:
+--   -- Disable autoformat for specific filetypes
+--   vim.api.nvim_create_autocmd("FileType", {
+--     pattern = { "markdown", "text" },
+--     callback = function()
+--       vim.b.autoformat = false
+--     end,
+--   })
+--
+--   -- Run a command when entering a specific directory
+--   vim.api.nvim_create_autocmd("DirChanged", {
+--     pattern = "*",
+--     callback = function()
+--       -- your code here
+--     end,
+--   })

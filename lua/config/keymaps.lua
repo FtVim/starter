@@ -1,1 +1,10 @@
--- Add any additional keymaps here
+-- User Keymaps
+-- Add your custom keymaps here
+-- These will be added to FtVim's default keymaps
+--
+-- Examples:
+--   vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { desc = "Save file" })
+--   vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down and center" })
+--   vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up and center" })
+--
+-- To see all available keymaps, press <leader>sk (Search Keymaps)

@@ -3,31 +3,17 @@
 --        / /_    / /  | | / // // /|_/ /
 --       / __/   / /   | |/ // // /  / /
 --      /_/     /_/    |___/___/_/  /_/
+--
+-- FtVim Starter Configuration
+-- https://github.com/FtVim/FtVim
 
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-        vim.fn.system({
-                "git",
-                "clone",
-                "--filter=blob:none",
-                "--single-branch",
-                "https://github.com/folke/lazy.nvim.git",
-                lazypath,
-        })
-end
+-- Bootstrap lazy.nvim and FtVim
+require("config.lazy")
 
-vim.opt.runtimepath:prepend(lazypath)
+-- Load user configuration (options, keymaps, autocmds)
+-- These files are optional - FtVim provides sensible defaults
+-- Uncomment to load your custom configurations:
 
-require("lazy").setup({
-        spec = {
-                -- add FtVim and import its plugins
-                {
-                        "FtVim/FtVim",
-                        import = "ftvim.plugins",
-                },
-                -- import/override with your plugins
-                { import = "plugins" },
-        },
-        checker = { enabled = true, notify = true }, -- automatically check for plugin updates
-})
-
+-- require("config.options")  -- Your custom options
+-- require("config.keymaps")  -- Your custom keymaps
+-- require("config.autocmds") -- Your custom autocmds

@@ -1,1 +1,10 @@
--- Add any additional options here
+-- User Options
+-- Add your custom Neovim options here
+-- These will override FtVim's default options
+--
+-- Examples:
+--   vim.opt.relativenumber = false  -- disable relative line numbers
+--   vim.opt.wrap = true             -- enable line wrapping
+--   vim.opt.scrolloff = 10          -- keep 10 lines visible above/below cursor
+--   vim.opt.colorcolumn = "80"      -- show column at 80 characters
+--   vim.g.autoformat = true         -- enable format on save (disabled by default)
