@@ -16,6 +16,15 @@
 -- Uncomment the examples below to enable them:
 
 return {
+  -- Change the colorscheme
+  -- See: https://ftvim.github.io/docs/configuration/colorscheme
+  -- {
+  --   "FtVim/FtVim",
+  --   opts = {
+  --     colorscheme = "tokyonight", -- or any installed colorscheme
+  --   },
+  -- },
+
   -- Add additional colorschemes
   -- { "rose-pine/neovim", name = "rose-pine" },
   -- { "EdenEast/nightfox.nvim" },

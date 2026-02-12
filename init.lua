@@ -8,12 +8,10 @@
 -- https://github.com/FtVim/FtVim
 
 -- Bootstrap lazy.nvim and FtVim
-require("config.lazy")
+require "config.lazy"
 
--- Load user configuration (options, keymaps, autocmds)
--- These files are optional - FtVim provides sensible defaults
--- Uncomment to load your custom configurations:
-
--- require("config.options")  -- Your custom options
--- require("config.keymaps")  -- Your custom keymaps
--- require("config.autocmds") -- Your custom autocmds
+-- FtVim automatically loads your custom configurations from:
+--   lua/config/options.lua   -- Custom vim options
+--   lua/config/keymaps.lua   -- Custom keymaps
+--   lua/config/autocmds.lua  -- Custom autocommands
+-- You don't need to require them here — just edit those files directly.
