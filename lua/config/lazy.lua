@@ -29,6 +29,10 @@ require("lazy").setup {
     {
       "FtVim/FtVim",
       import = "ftvim.plugins",
+      -- FtVim options (uncomment to customize):
+      -- opts = {
+      --   colorscheme = "tokyonight", -- change the default colorscheme
+      -- },
     },
 
     -- To enable 42 support (header, formatter, norminette integration):
@@ -45,6 +49,7 @@ require("lazy").setup {
     version = false, -- always use the latest git commit
   },
   install = {
+    -- Colorscheme used during install (before plugins are loaded)
     colorscheme = { "catppuccin", "habamax" },
   },
   checker = {

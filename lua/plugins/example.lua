@@ -16,18 +16,10 @@
 -- Uncomment the examples below to enable them:
 
 return {
-  -- Change the colorscheme
-  -- See: https://ftvim.github.io/docs/configuration/colorscheme
-  -- {
-  --   "FtVim/FtVim",
-  --   opts = {
-  --     colorscheme = "tokyonight", -- or any installed colorscheme
-  --   },
-  -- },
-
-  -- Add additional colorschemes
-  -- { "rose-pine/neovim", name = "rose-pine" },
-  -- { "EdenEast/nightfox.nvim" },
+  -- Change the colorscheme: set opts.colorscheme in lua/config/lazy.lua
+  -- To add a new colorscheme plugin (not bundled with FtVim):
+  -- { "rose-pine/neovim", name = "rose-pine", lazy = false, priority = 1000 },
+  -- { "EdenEast/nightfox.nvim", lazy = false, priority = 1000 },
 
   -- Disable a plugin that FtVim includes by default
   -- { "folke/flash.nvim", enabled = false },
